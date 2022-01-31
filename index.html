@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Metadados -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrking-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="formulario.css" media="screen" <!-- Título da página -->
+  <title>Cadastro de jornalistas</title>
+
+</head>
+
+<body>
+
+  <!-- Cabeçalho com título e subtítulo -->
+  <div>
+    <h1 id="titulo">Cadastro de jornalistas</h1>
+    <p id="subtitulo">Adicione suas informações</p>
+    <br>
+  </div>
+
+  <!-- Início do formulário -->
+  <form>
+
+    <fieldset class="grupo">
+      <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+      <div class="campo">
+        <label for="nome"><strong>Nome</strong></label>
+        <input type="text" name="nome" id="nome" required>
+      </div>
+
+      <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+      <div class="campo">
+        <label for="sobrenome"><strong>Sobrenome</strong></label>
+        <input type="text" name="sobrenome" id="sobrenome" required>
+      </div>
+    </fieldset>
+
+    <!-- Campo de e-mail com -->
+    <div class="campo">
+      <label for="email"><strong>E-mail</strong></label>
+      <input type="email" name="email" id="email" required>
+    </div>
+
+    <!-- Campo de área bom 3 opções de botões selecionáveis -->
+    <div class="campo">
+      <label><strong> Em que área você atua?</strong></label>
+      <label>
+        <input type="radio" name="jornalista" value="assessoria" chacked>Assessoria</label>
+      <label>
+        <input type="radio" name="jornalista" value="redacao">Redação</label>
+      <label>
+        <input type="radio" name="jornalista" value="redessociais">Redes sociais</label>
+    </div>
+
+    <!-- Campo de senioridade com 3 opcões para escolha e css de classe "campo" -->
+    <div class="campo">
+      <label for="senioridade"><strong>Senioridade</strong></label>
+      <select id="senioridade" required>
+        <option selected disable value="">Selecione</option>
+        <option>Júnior</option>
+        <option>Pleno</option>
+        <option>Sênior</option>
+      </select>
+    </div>
+
+    <fieldset class="grupo">
+      <!-- Campo de conhecimentos para escolha de um ou mais para marcar e css de "campo" -->
+      <div id="check">
+        <label><strong>Selecione alguns dos conhecimentos que já possui:</strong></label><br><br>
+        <input type="checkbox" id="conhecimento1" name="conhecimento1" value="SEO">
+        <label for="conhecimento1"> SEO</label>
+        <input type="checkbox" id="conhecimento2" name="conhecimento2" value="Wordpress">
+        <label for="conhecimento2"> Wordpress</label>
+        <input type="checkbox" id="conhecimento3" name="conhecimento3" value="Marketing">
+        <label for="conhecimento3"> Marketing</label>
+        <input type="checkbox" id="conhecimento4" name="conhecimento4" value="Canvas">
+        <label for="conhecimento4"> Canvas</label>
+        <input type="checkbox" id="conhecimento5" name="conhecimento5" value="Video">
+        <label for="conhecimento5"> Edição de vídeo</label>
+        <input type="checkbox" id="conhecimento6" name="conhecimento6" value="ADS">
+        <label for="conhecimento1"> ADS</label>
+        <input type="checkbox" id="conhecimento7" name="conhecimento7" value="DataScience">
+        <label for="conhecimento1"> Data Science</label>
+      </div>
+    </fieldset>
+
+    <!-- Caixa de texto -->
+    <div class="campo">
+      <br>
+      <label for="experiencia"><strong>Conte um pouco mais sobre a sua experiência: </strong></label>
+      <textarea rows="4" style="width: 26em" id="experiencia"></textarea>
+    </div>
+
+    <!-- Botão para envio do formulário -->
+    <button class="botao" type"submit" onsubmit="">Concluído</button>
+
+  </form>
+
+</body>
+
+</html>
